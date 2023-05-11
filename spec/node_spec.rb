@@ -15,7 +15,7 @@ RSpec.describe Node do
     node = Node.new("plop")
     
     expect(node.data).to eq("plop")
-    require 'pry'; binding.pry
+
     end
 
     it '#next_node' do
