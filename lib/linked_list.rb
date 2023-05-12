@@ -1,9 +1,9 @@
 class LinkedList
 
-    attr_reader :list, :head
-    def initialize(list)
-        @list = list
+    attr_reader :head, :count
+    def initialize(count)
         @head = nil
+        @count = 0
        
     
         
@@ -21,6 +21,14 @@ class LinkedList
             current_node.next_node = new_node
         end
       
+    end
+
+    def count
+        if count = 0 && current_node = @head
+
+        @count += 1
+        
+
     end
 
 

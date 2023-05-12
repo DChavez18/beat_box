@@ -19,7 +19,11 @@ RSpec.describe LinkedList do
         expect(list.data).to eq("doop")
     end
 
-    
+    it '#count' do
+        list = LinkedList.new([])
+        list = list.append("doop")
+        expect(list.count).to eq(1)
+    end 
 
     
 end
