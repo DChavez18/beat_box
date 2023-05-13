@@ -9,13 +9,14 @@ class LinkedList
             @head = Node.new(data)
         else
             current_node = @head
-            new_node = Node.new(data)
-            data 
-        end     
+            new_node = Node.new(data) 
+        end
+            data
+             
     end
 
     def count
-        count = 1
+            count = 1
         if @head.nil?
             count = 1
         else
@@ -28,6 +29,22 @@ class LinkedList
     end
         count
     end
+
+    # def to_string
+        
+    #     if @head.nil?
+    #         return ""
+    #     else
+    #         node = @head
+    #         string = node.data.to_s
+    #         until node.next_node.nil?
+    #             string += " " + node.next_node.data.to_s
+    #             node = node.next_node
+    #         end
+    #     end
+    #     string
+    # end
+
 end
         # while
         #     current_node.next_node == nil
