@@ -53,6 +53,14 @@ RSpec.describe LinkedList do
         list.append("suu")
         expect(list.head.next_node.data).to eq("suu")
     end
+
+    it '#prepend' do
+        list = LinkedList.new
+        list.append("plop")
+        list.append("suu")
+        list.prepend("dop")
+        expect(list.head.data).to eq("dop")
+    end
 end
 
   
