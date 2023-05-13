@@ -2,7 +2,7 @@ class LinkedList
     attr_reader :head
     def initialize
         @head = nil
-        
+          
     end
 
     
@@ -49,58 +49,30 @@ class LinkedList
             @head = new_node
         end
         data
-    end   
+    end
+
+    def insert(position, data)
+        if position == 0
+          prepend(data)
+        else
+          current_node = @head
+          (position - 1).times do
+            current_node = current_node.next_node
+          end
+            inserted_node = Node.new(data)
+            inserted_node.next_node = current_node.next_node
+            current_node.next_node = inserted_node
+        end
+            data
+      end
 end
 
 
-
-
-# def append(data)
-#     if @head == nil
-#         @head = Node.new(data)
-#     else
-#         current_node = @head
-#         current_node = current_node.next_node
-#         until
-#             current_node.next_node.nil?
-#             current_node.next_node = new_node
-#         end
-#         data
-#     end
-# end
-
-# def count
-#         count = 1
-#     if @head.nil?
-#         count = 1
-#     else
-#         count = 2
-#         node = @head
-#     until node.next_node.nil?
-#         count += 1
-#         node = node.next_node
-#     end
-# end
-#     count
-# end
-
-# def to_string
-    
-#     if @head.nil?
-#         return ""
-#     else
-#         node = @head
-#         string = node.data.to_s
-#         until node.next_node.nil?
-#             string += " " + node.next_node.data.to_s
-#             node = node.next_node
-#         end
-#     end
-#         string
-#     end
-
-# end
-
-# def initialize
-#     @head = nil
-#   end
+    # def insert(position, data)
+    #     if position == @head
+    #         append(data)
+    #     else
+    #         new_node = @head
+    #         moves new_node to the assigned position?
+    #           times method?
+    # end
