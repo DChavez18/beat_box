@@ -24,7 +24,13 @@ RSpec.describe LinkedList do
         list.append("deep")
         expect(list.head.next_node).to eq(nil)
     end
-    
+
+    it '#count' do
+        list = LinkedList.new
+        list.append("doop")
+        list.append("deep")
+        expect(list.count).to eq(2)
+    end
 
     
 
