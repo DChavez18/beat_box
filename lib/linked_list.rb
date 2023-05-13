@@ -10,7 +10,7 @@ class LinkedList
         else
              current_node = @head
             new_node = Node.new(data)
-            data
+            data 
         end     
     end
 end
