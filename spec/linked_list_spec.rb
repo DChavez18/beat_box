@@ -40,13 +40,11 @@ RSpec.describe LinkedList do
     end
 
     it 'adds noise' do
-    list = LinkedList.new
-    list.append("plop")
-    list.to_string
-    
-
-    expect(list.head.data).to eq("plop")
-    expect(list.to_string).to eq("plop")
+        list = LinkedList.new
+        list.append("plop")
+        list.to_string
+        expect(list.head.data).to eq("plop")
+        expect(list.to_string).to eq("plop")
     end
 end
 
