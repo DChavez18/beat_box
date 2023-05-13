@@ -61,6 +61,15 @@ RSpec.describe LinkedList do
         list.prepend("dop")
         expect(list.head.data).to eq("dop")
     end
+
+    it 'puts out a string and counts' do
+        list = LinkedList.new
+        list.append("plop")
+        list.append("suu")
+        list.prepend("dop")
+        expect(list.to_string).to eq("dop plop suu")
+        expect(list.count).to eq(3)
+    end
 end
 
   
