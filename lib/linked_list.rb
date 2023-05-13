@@ -45,14 +45,14 @@ class LinkedList
             @head = Node.new(data)
         else
             new_node = Node.new(data)
+            new_node.next_node = @head
             @head = new_node
         end
         data
     end   
 end
 
-#prepend?
-# new_node.next_node = @head
+
 
 
 # def append(data)
