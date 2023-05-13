@@ -46,6 +46,13 @@ RSpec.describe LinkedList do
         expect(list.head.data).to eq("plop")
         expect(list.to_string).to eq("plop")
     end
+
+    it 'adds suu' do
+        list = LinkedList.new
+        list.append("plop")
+        list.append("suu")
+        expect(list.head.next_node.data).to eq("suu")
+    end
 end
 
   
