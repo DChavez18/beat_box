@@ -38,9 +38,6 @@ RSpec.describe LinkedList do
         list.append("deep")
         expect(list.to_string).to eq("doop deep")
     end
-
-    
-
 end
 
   
