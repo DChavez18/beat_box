@@ -65,6 +65,9 @@ class LinkedList
         end
             data
       end
+
+      def find()
+      end
 end
 
 
