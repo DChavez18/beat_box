@@ -66,16 +66,23 @@ class LinkedList
             data
       end
 
-      def find()
-      end
+      def find(position, number_of_elements)
+            current_node = @head
+            (position).times do
+            current_node = current_node.next_node
+        end
+            string = ""
+            number_of_elements.times do
+            string += current_node.data + " "
+            current_node = current_node.next_node
+        end
+            string.strip
+    end
 end
 
-
-    # def insert(position, data)
-    #     if position == @head
-    #         append(data)
-    #     else
-    #         new_node = @head
-    #         moves new_node to the assigned position?
-    #           times method?
+    # def find(position, elements)
+    #     start at head, iterate over elements however many times,
+    #     makes the elements data into string.
+    #     remove white space. use .strip
+    #     use times.do 
     # end
