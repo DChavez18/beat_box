@@ -111,8 +111,19 @@ RSpec.describe LinkedList do
         list.append("blop")
         expect(list.includes?("deep")).to eq(true)
         expect(list.includes?("dep")).to eq(false)
-    end 
+    end
 
+    it '#pop' do
+        list = LinkedList.new
+        list.append("deep")
+        list.append("woo")
+        list.append("shi")
+        list.append("shu")
+        list.append("blop")
+        list.pop("blop")
+        list.pop("shu")
+        expect(list.to_string).to eq("deep woo shi")
+    end
 end
 
   
