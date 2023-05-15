@@ -120,3 +120,22 @@ end
     #     look over list until you find tail (nil)
     #     make a loop that removes the node that is pointing to nil
     # # end
+
+    # def insert
+    #     this method inserts data at a given position within the list
+    #     start at the head and determine if the data is being
+    #     inserted at the head,
+    #     make a node that starts at the head and goes through a loop
+    #     which finds the node which is positioned before
+    #     where the input data(new_node) goes
+    #     reposition where we are in the loop
+    #     make sure to keep track of where the inserted_node is pointing 
+    # end
+
+    # def prepend
+    #     start at the head and if head is nil add data
+    #     create new node with data, and assign it to the head,
+    #     which is the front of the list.
+    #     set the next_node of the new data to the head
+    #     connect the rest of the list to the new node
+    # end
