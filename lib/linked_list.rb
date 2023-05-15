@@ -78,6 +78,17 @@ class LinkedList
         end
             string.strip
     end
+
+    def includes?(data)
+            current_node = @head
+        until current_node.nil?
+        return true if 
+            current_node.data == data
+            current_node = current_node.next_node
+        end
+            false
+      end
+
 end
 
     # def find(position, elements)
@@ -85,4 +96,11 @@ end
     #     makes the elements data into string.
     #     remove white space. use .strip
     #     use times.do 
+    # end
+
+    # def includes
+    #     this method needs to check the list starting from the head
+    #     checking if the data in each node matches the data it is looking for
+    #     when it finds a match, we return true.
+    #     if not it returns false
     # end
