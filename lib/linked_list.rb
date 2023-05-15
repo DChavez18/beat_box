@@ -87,7 +87,16 @@ class LinkedList
             current_node = current_node.next_node
         end
             false
-      end
+    end
+
+    def pop
+            current_node = @head
+        until current_node.next_node.next_node.nil?
+            current_node = current_node.next_node
+        end
+  
+            current_node.next_node = nil
+    end
 
 end
 
@@ -104,3 +113,10 @@ end
     #     when it finds a match, we return true.
     #     if not it returns false
     # end
+
+    # def pop
+    #     this method removes elements the last element from the list
+    #     if list is empty return nil
+    #     look over list until you find tail (nil)
+    #     make a loop that removes the node that is pointing to nil
+    # # end
