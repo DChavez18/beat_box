@@ -1,7 +1,21 @@
 class BeatBox
-    attr_accessor :LinkedList
+    attr_reader :list
     def initialize
-        @list = LinkedList
-        @head = nil
+        @list = LinkedList.new
+        
     end
+
+    def append(data)
+        @list.append(data)
+        data
+    end
+
+
 end
+
+# def append
+#     method takes in data
+#     use LinkedList append method
+#     to add data
+#     return data as a string
+# end
