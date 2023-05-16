@@ -100,6 +100,16 @@ class LinkedList
 
 end
 
+    # def append(data)
+    #     takes in data which is the data to be stored in node
+    #     start at head, if head is nil add node there
+    #     if head is not nil then create a node to start at the head of the list
+    #     use a loop to look over list until it finds nil
+    #     current node must become next node
+    #     when current node is the last node add new
+
+    # end
+
     # def find(position, elements)
     #     start at head, iterate over elements however many times,
     #     makes the elements data into string.
@@ -138,4 +148,24 @@ end
     #     which is the front of the list.
     #     set the next_node of the new data to the head
     #     connect the rest of the list to the new node
+    # end
+
+    # def to_string
+    #     create an empty variable to store new data
+    #     start at head to look over linked list, use a loop(until, while)
+    #     change node data to string
+    #     move to next node and repeat
+    #     when all data is strings remove the white space(.strip)
+    #     return new string value
+    # end
+
+    # def count
+    #     counts number of nodes in list
+    #     start the count at 0, by naming a variable
+    #     create a node variable and start it at the head
+    #     create a loop that looks over list until it hits a nil value
+    #     add 1 everytime a node has been looped over
+    #     move nodes by using next_node
+    #     return value of total nodes
+
     # end
