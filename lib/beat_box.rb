@@ -10,6 +10,9 @@ class BeatBox
         data
     end
 
+    def play
+        p @list.head.data
+    end
 end
 
 # def append
