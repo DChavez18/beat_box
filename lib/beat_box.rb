@@ -11,7 +11,7 @@ class BeatBox
     end
 
     def play
-        p @list.head.data
+       `say -r 200 -v Alex  #{@list.to_string}`
     end
 end
 
