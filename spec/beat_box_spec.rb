@@ -17,4 +17,10 @@ RSpec.describe BeatBox do
         expect(bb.append("deep doo ditt")).to eq("deep doo ditt")
     end
 
+    it '#play' do
+        bb = BeatBox.new
+        bb.append("deep doo ditt woo hoo shu")
+        expect(bb.play).to eq("deep doo ditt woo hoo shu")
+    end
+
 end

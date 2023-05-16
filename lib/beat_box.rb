@@ -10,7 +10,6 @@ class BeatBox
         data
     end
 
-
 end
 
 # def append
