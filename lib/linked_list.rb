@@ -82,8 +82,7 @@ class LinkedList
     def includes?(data)
             current_node = @head
         until current_node.nil?
-        return true if 
-            current_node.data == data
+            return true if current_node.data == data
             current_node = current_node.next_node
         end
             false
@@ -167,5 +166,4 @@ end
     #     add 1 everytime a node has been looped over
     #     move nodes by using next_node
     #     return value of total nodes
-
     # end

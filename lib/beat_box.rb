@@ -21,3 +21,10 @@ end
 #     to add data
 #     return data as a string
 # end
+
+# def play
+#     use the command tool say with backticks
+#     and string interpolation
+#     use to_string method attached to the LinkedList
+# end
+
